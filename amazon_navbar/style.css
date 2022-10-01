@@ -1,0 +1,149 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    
+    color: #fff;
+     /* font-family: 'Fira sans','Open Sans', sans-serif; */
+    font-family: 'segoe ui'; 
+}
+
+.navbar {
+    height: 60px;
+    width: 100vw;
+    background-color: #101212;
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+    justify-content: center;
+}
+
+/* .navbar > div {
+    border: 1px solid #fff;
+} */
+
+.box {
+    padding: .4rem .8rem;
+    cursor: pointer;
+}
+
+.box:hover {
+    border: 1px solid #fff;
+   border-radius: 3px;
+}
+
+.logo > img {
+    height: 2rem;
+}
+
+.address {
+    display: flex;
+}
+
+.items {
+    line-height: 15px;
+    
+}
+
+.address >div > img {
+    margin-top: 10px;
+    height: 1.25rem;
+    filter: invert(1);
+}
+
+.items p {
+    font-size: .8rem;
+}
+
+/* .items h4 {
+    font-size: 1rem;
+    font-weight: bolder;
+} */
+
+.search  {
+    width: 56rem;
+    display: flex;
+    justify-content: center;
+    margin: 0 4px 0 4px;
+}
+
+.menu > select{
+    background-color: #eaf1f1;
+    padding-left: .2rem;
+    margin-bottom: 2px;
+    height: 2.7rem;
+    width: 3.5rem;
+    border: none;
+    border-right: 1px solid #E4ECEC ;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.menu> select:hover {
+    background-color: #d4e0e0;
+    cursor: pointer;
+}
+
+ #search, .search-btn {
+    height: 2.7rem;
+    border: none;
+    outline: none;
+}
+
+#search {
+    width: 50rem;
+    max-width: 780px;
+    padding: 2px;
+}
+
+.search-btn {
+    width: 2.5rem;
+    border-radius: 0 4px 4px 0;
+    background-color: #e5cf78;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background-color: #FCCC04;
+}
+
+.search:hover  select ,.search:hover  #search, .search:hover .search-btn {
+    border-top: 4px solid #FCCC04 ;
+   border-bottom: 4px solid #FCCC04 ;
+} 
+
+.search:hover  select {
+    border-left: 4px solid #FCCC04 ;
+}
+
+.search:hover .search-btn {
+    border-right: 4px solid #FCCC04 ;
+    
+}
+
+.cart {
+    display: flex;
+}
+
+.cart i {
+    font-size: 2rem;
+}
+
+.cart > div {
+    padding-top: 15px;
+}
+
+@media only screen and (max-width: 850px) {
+    .cart {
+        display: none;
+    }
+  }
+
+

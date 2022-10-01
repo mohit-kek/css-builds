@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Sidebar</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class="fa-brands fa-codepen"></i>
+                <div class="logo_name">Elite</div>
+            </div>
+            <i class="fa-solid fa-bars " id="btn"></i>
+        </div>
+
+        <ul class="nav_list">
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-magnifying-glass " id="search"></i> 
+                    <input type="text" placeholder="Search...">
+                </a>
+                <span class="tooltip">Search</span>
+            </li>
+            <li>
+                <a href="#">
+                    <!-- <i class="fa-solid fa-border-all"></i> -->
+                    <i class="fa-solid fa-grip"></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-user"></i>
+                    <span class="links_name">User</span>
+                </a>
+                <span class="tooltip">User</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span class="links_name">Messages</span>
+                </a>
+                <span class="tooltip">Messages</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-chart-column"></i>
+                    <span class="links_name">Analytics</span>
+                </a>
+                <span class="tooltip">Analytics</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-folder-open"></i>
+                    <span class="links_name">File Manager</span>
+                </a>
+                <span class="tooltip">File Manager</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-cart-flatbed"></i>
+                    <span class="links_name">Order</span>
+                </a>
+                <span class="tooltip">Order</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-notes-medical"></i>
+                    <span class="links_name">Saved</span>
+                </a>
+                <span class="tooltip">Saved</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-gear"></i>
+                    <span class="links_name">Settings</span>
+                </a>
+                <span class="tooltip">Settings</span>
+            </li>
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                    <img src="" alt="avatar">
+                    <div class="name_job">
+                        <div class="name">Elite Devs</div>
+                        <div class="job">Web Dev</div>
+                    </div>
+                </div>
+                <i class="fa-solid fa-right-to-bracket" id="logout"></i>
+            </div>
+        </div>
+        <div class="home_content">
+            <div class="text">Home Content </div>
+        </div>
+    </div>
+
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+        let searchbtn = document.querySelector(".fa-magnifying-glass");
+
+        btn.onclick = function() {
+            sidebar.classList.toggle("active");
+        }
+
+        searchbtn.onclick = function() {
+            sidebar.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

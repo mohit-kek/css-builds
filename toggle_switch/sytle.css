@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+    background-color: #04048C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+label {
+    width:530px;
+    height:220px;
+    position: relative;
+    display: block;
+    background: linear-gradient(to bottom, #ffe259, #ffa751);
+    border-radius: 150px;
+border: 10px solid #DCF4FC;  
+  cursor: pointer;
+    transition: 0.3s;
+  }
+
+  label::after {
+    content:  "";
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: linear-gradient(180deg,#ffcc89,#d8860b);
+    border-radius: 180px;
+    transition: 0.3s;
+  }
+
+  input {
+      width: 0;
+    height: 0;
+    visibility: hidden; 
+  } 
+
+  input:checked + label {
+    background: linear-gradient(to right, #4b6cb7, #182848);
+  }
+
+  input:checked + label::after {
+    left: 490px;
+    transform: translateX(-100%);
+    background: linear-gradient(to right, #8e9eab, #eef2f3);
+  }
+
+  /* /* label:active {
+    transform: rotateX(180deg);
+  }  */
+/* 
+  label:active::after + input:checked {
+    transform: scale(1.5);
+  }  */
+
+  
+
+ 
+
+
+  .background {
+    width:100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, #ffe259, #ffa751);
+    z-index: -1;
+    position: absolute;
+    transition: 0.3s;
+  }
+
+  input:checked + label + .background {
+    background: linear-gradient(to right, #4b6cb7, #182848);
+  }
+
+  label img {
+    position: absolute;
+    width: 150px;
+    margin: 25px 0 0px -15px;
+    z-index: 100;
+  }
+  label img.sun {
+    left:40px;
+    fill:#fff;
+  }
+  label img.moon {
+    filter: opacity(.4);
+    left:340px;
+    fill:#7e7e7e;
+  }
+  input:checked + label img.sun {
+    filter:opacity(.2);
+
+    fill:#7e7e7e;
+  }
+  input:checked + label img.moon {
+    fill:#fff;
+    filter: none;
+  }

@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #4e54c8, #8f94fb);
+}
+
+.card {
+    height: 250px;
+    width: 200px;
+    padding: 15px;
+    margin: 100px auto;
+    background: linear-gradient(to right, #00b4db, #0083b0);
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+     
+}
+
+.pic  {
+    width: 200px;
+    height: 250px;
+    background-image: url(/avatar.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: 1;
+    border-radius: 10px;
+    transition: 0.7s;
+
+}
+
+.bio {
+    margin-top: 60px;
+    color: #23070b;
+    text-align: center;
+    visibility: hidden;
+}
+
+.bio p {
+    font-size: 14px; 
+    text-align: justify;
+}
+
+.card:hover {
+    border-top: 5px solid #fff ;
+    border-bottom: 5px solid #fff
+}
+
+.card:hover .pic {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    border: 3px solid #fff;
+    top: 10px;
+}
+
+.card:hover .bio {
+    transition: 1.2s;
+    transform: scale(1);
+    visibility: visible;
+}
+

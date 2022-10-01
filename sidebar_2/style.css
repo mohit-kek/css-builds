@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    font-family: Verdana,  sans-serif;
+}
+
+.sidebar {
+    position: fixed;
+    height: 100%;
+    width: 260px;
+    background-color: #043AEB;
+    color: #fff;
+    padding: 10px;
+    overflow: hidden;
+    transition: all 0.5s ease;
+
+}
+
+.sidebar.bar {
+    width: 80px;
+}
+
+.logo_details {
+    height: 50px ;
+    display: flex;
+    align-items: center;
+}
+
+.logo_details > i, .menu-item > i {
+    font-size: 25px;
+}
+
+.logo_details > i {
+    padding-left: 15px;
+}
+
+.logo {
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.logo > span {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+
+
+.logo > img {
+    height: 35px;
+    width: 35px;
+    overflow: hidden;
+    border: none;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.menu {
+    height: 100%;
+    margin-top: 40px;
+}
+
+.menu-item {
+    height: 50px;
+    min-width: 100%;
+    border-radius: 30px;
+    margin: 7px 0;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    transition: all 0.5s ease;
+}
+
+.sidebar.bar .menu-item {
+    padding-left: 13px;
+}
+
+.menu-item:hover {
+    border: 3px solid white;
+}
+
+.menu-item:hover > i ,.menu-item:hover > span {
+    scale: 1.2;
+}
+
+.sidebar.bar .menu-item {
+
+    border-radius: 4px;
+    width: 40px;
+}
+
+.menu-item > span {
+    padding-left: 12px;
+}
+
+.sidebar.bar > .menu > .menu-item > span{
+    display: none;
+}

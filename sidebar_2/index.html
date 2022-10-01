@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./style.css">
+    <title>Sidebar</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo_details">
+            <i class='bx bx-menu btn' ></i>
+            <div class="logo">
+                <img src="./logo.png" >
+                <span>Sidebar</span>
+            </div>
+        </div>
+
+        <div class="menu">
+            <div class="menu-item">
+                <i class='bx bxs-home'></i>
+                <span>Home</span>
+            </div>
+            <div class="menu-item">
+                <i class='bx bxs-briefcase' ></i>
+                <span>Portfolio</span>
+            </div>
+            <div class="menu-item">
+                <i class='bx bxs-cart-alt' ></i>
+                <span>Orders</span>
+            </div>
+            <div class="menu-item">
+                <i class='bx bxs-paper-plane' ></i>
+                <span>Contact</span>
+            </div>
+            <div class="menu-item">
+                <i class='bx bxs-dashboard' ></i>
+                <span>Dashboard</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const btn = document.querySelector(".btn")
+        const sideBar = document.querySelector(".sidebar");
+
+        btn.onclick = function() {
+            sideBar.classList.toggle("bar");
+        }
+
+
+    </script>
+</body>
+</html>
